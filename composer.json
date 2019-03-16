@@ -1,0 +1,24 @@
+{
+  "name": "bonny/gardener",
+  "description": "Cleanup for WordPress frontend and backend",
+  "homepage": "https://github.com/bonny/gardener/",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Pär Thernström",
+      "homepage": "https://eskapism.se/"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/bonny/gardener/issues",
+    "source": "https://github.com/bonny/gardener"
+  },
+  "repositories": [],
+  "require": {
+    "php": ">=7.0",
+    "composer/installers": "~1.0"
+  },
+  "require-dev": {},
+  "scripts": {}
+}
