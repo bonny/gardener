@@ -1,0 +1,30 @@
+{
+  "name": "gardener",
+  "version": "1.0.0",
+  "description": "Add theme support for cleaning up WordPress admin + frontend. Opinionated.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonny/simple-cleanup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bonny/simple-cleanup/issues"
+  },
+  "homepage": "https://github.com/bonny/simple-cleanup#readme",
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.10.2",
+    "husky": "^1.3.1",
+    "prettier": "^1.16.4",
+    "pretty-quick": "^1.10.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
