@@ -42,20 +42,28 @@ add_theme_support('gardener-relative-links');
 or add all opinionated by using wildcard *
 add_theme_support('gardener-*');
 */
-$features = [
-    'gardener-relative-links' => [],
-    'gardener-cleanup-uploads-filenames' => [],
-    'gardener-cleanup-dashboard' => [],
-    'gardener-cleanup-frontend' => [],
-    'gardener-cleanup-menus' => []
-];
+function getFeatures()
+{
+    error_log('getFeatures');
+    return [
+        'gardener-relative-links' => [],
+        'gardener-cleanup-uploads-filenames' => [],
+        'gardener-cleanup-dashboard' => [],
+        'gardener-cleanup-frontend' => [],
+        'gardener-cleanup-menus' => []
+    ];
+}
 
 /**
  * Check for enabled features on init.
  * We can detect all features added with add_theme_support(), for example
  * add_theme_support('gardener-cleanup-dashboard');
  */
-add_action('init', function () use ($features) {
+add_action('init', __NAMESPACE__ . '\checkForEnabledFeatures');
+
+function checkForEnabledFeatures()
+{
+    $features = getFeatures();
     array_walk($features, function ($feature, $featureKey) {
         if (current_theme_supports($featureKey)) {
             // Load feature.
@@ -64,7 +72,7 @@ add_action('init', function () use ($features) {
             loadFeature($featureKey);
         }
     });
-});
+}
 
 /**
  * Load feature.
