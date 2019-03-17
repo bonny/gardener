@@ -69,7 +69,6 @@ function onRestRequestBeforeCallbacks($response, $handler, $request)
  */
 function relativize_tinymce_links()
 {
-    error_log(__FUNCTION__);
     if (
         // used when fetching posts to insert
         // used when fetching images to show in media editor
