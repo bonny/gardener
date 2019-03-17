@@ -42,17 +42,6 @@ add_theme_support('gardener-relative-links');
 or add all opinionated by using wildcard *
 add_theme_support('gardener-*');
 */
-function getFeatures()
-{
-    error_log('getFeatures');
-    return [
-        'gardener-relative-links' => [],
-        'gardener-cleanup-uploads-filenames' => [],
-        'gardener-cleanup-dashboard' => [],
-        'gardener-cleanup-frontend' => [],
-        'gardener-cleanup-menus' => []
-    ];
-}
 
 /**
  * Check for enabled features on init.
@@ -65,13 +54,29 @@ function checkForEnabledFeatures()
 {
     $features = getFeatures();
     array_walk($features, function ($feature, $featureKey) {
+        // Load feature if support has been requested.
         if (current_theme_supports($featureKey)) {
-            // Load feature.
             error_log('user has added support for ' . $featureKey);
             // error_log(__DIR__);
             loadFeature($featureKey);
         }
     });
+}
+
+/**
+ * Get features.
+ *
+ * @return array Array with features. Key is feature slug.
+ */
+function getFeatures()
+{
+    return [
+        'gardener-relative-links' => [],
+        'gardener-cleanup-uploads-filenames' => [],
+        'gardener-cleanup-dashboard' => [],
+        'gardener-cleanup-frontend' => [],
+        'gardener-cleanup-menus' => []
+    ];
 }
 
 /**
