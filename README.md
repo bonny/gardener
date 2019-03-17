@@ -13,3 +13,16 @@ _Gardener_ – because cleans up frontend and backend of WordPress.
 - [ ] Auto-format code using Prettier
 - [ ] Package.json
 - [ ] Test composer.json
+
+## Taglines
+
+Let's find a tagline!
+
+- Clean up the mess.
+- > a person who tends and cultivates a garden as a pastime or for a living.
+- > someone who takes care of a garden either as a hobby or as a regular job
+- > one who spends time cultivating plants and tending a garden for pleasure or recreation
+  > -- https://www.merriam-webster.com/dictionary/gardener
+- > one employed to care for the gardens or grounds of a home, business concern, or other property
+  > -- https://www.merriam-webster.com/dictionary/gardener
+- Cleanup the mess.
