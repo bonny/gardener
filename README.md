@@ -13,6 +13,18 @@ _Gardener_ – because cleans up frontend and backend of WordPress.
 - [ ] Auto-format code using Prettier
 - [ ] Package.json
 - [ ] Test composer.json
+- [ ] Document features incl. screenshots
+
+## Features
+
+### Relative links
+
+<details>
+  <summary>Screenshot</summary>
+  "Coming soon."
+</details>
+
+### Remove emoji
 
 ## Taglines
 
