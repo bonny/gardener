@@ -47,17 +47,25 @@ add_theme_support('gardener-*');
  * Check for enabled features on init.
  * We can detect all features added with add_theme_support(), for example
  * add_theme_support('gardener-cleanup-dashboard');
+ *
+ * Call with prio 1 so executed earlier than most things.
  */
-add_action('init', __NAMESPACE__ . '\checkForEnabledFeatures');
+add_action('init', __NAMESPACE__ . '\checkForEnabledFeatures', 1);
 
+/**
+ * Check for enabled features and load required files.
+ *
+ * Called from init action.
+ */
 function checkForEnabledFeatures()
 {
     $features = getFeatures();
+
     array_walk($features, function ($feature, $featureKey) {
         // Load feature if support has been requested.
-        if (current_theme_supports($featureKey)) {
-            error_log('user has added support for ' . $featureKey);
-            // error_log(__DIR__);
+        $featureKeyWithPrefix = "gardener-{$featureKey}";
+        if (current_theme_supports($featureKeyWithPrefix)) {
+            // error_log("user has added support for $featureKey");
             loadFeature($featureKey);
         }
     });
@@ -67,27 +75,28 @@ function checkForEnabledFeatures()
  * Get features.
  *
  * @return array Array with features. Key is feature slug.
+ * Array as value to make room for any future customiziation or informaton.
  */
 function getFeatures()
 {
     return [
-        'gardener-relative-links' => [],
-        'gardener-cleanup-uploads-filenames' => [],
-        'gardener-cleanup-dashboard' => [],
-        'gardener-cleanup-frontend' => [],
-        'gardener-cleanup-menus' => []
+        'remove-emoji' => [],
+        'relative-links' => [],
+        'cleanup-uploads-filenames' => [],
+        'cleanup-dashboard' => [],
+        'cleanup-frontend' => [],
+        'cleanup-menus' => []
     ];
 }
 
 /**
- * Load feature.
+ * Load a feature.
  *
  * @param string $featureKey.
  */
 function loadFeature($featureKey)
 {
-    $featureKey = str_replace('gardener-', '', $featureKey);
     $featureFile = __DIR__ . '/features/' . "{$featureKey}.php";
-    error_log('loading feature file: ' . $featureFile);
+    // error_log("loading feature file $featureFile");
     @include $featureFile;
 }
