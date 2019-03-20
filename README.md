@@ -1,9 +1,11 @@
-# Gardener – Simple Cleanup for WordPress
+# Gardener – Opinionated cleanup for WordPress
+
+**Note: work in progress, don't use on a production site!**
 
 Add theme support for cleaning up WordPress admin + frontend.
 Opinionated.
 
-**Note: work in progress, don't use on a production site!**
+No feature is added or modified by default. Support for each feature must be added manually.
 
 ## Name suggestions
 
