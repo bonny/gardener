@@ -64,9 +64,13 @@ function checkForEnabledFeatures()
     array_walk($features, function ($feature, $featureKey) {
         // Load feature if support has been requested.
         $featureKeyWithPrefix = "gardener-{$featureKey}";
-        if (current_theme_supports($featureKeyWithPrefix)) {
+        if (($support = get_theme_support($featureKeyWithPrefix)) !== false) {
+            $featureArguments = [];
+            if (is_array($support) && isset($support[0])) {
+                $featureArguments = $support[0];
+            }
             // error_log("user has added support for $featureKey");
-            loadFeature($featureKey);
+            loadFeature($featureKey, $featureArguments);
         }
     });
 }
@@ -84,8 +88,8 @@ function getFeatures()
         'relative-links' => [],
         'cleanup-upload-filenames' => [],
         'cleanup-dashboard' => [],
-        'cleanup-frontend' => [],
-        'cleanup-menus' => []
+        // Supports argument "message".
+        'enhance-login-screen' => []
     ];
 }
 
@@ -94,7 +98,7 @@ function getFeatures()
  *
  * @param string $featureKey.
  */
-function loadFeature($featureKey)
+function loadFeature($featureKey, array $featureArguments = [])
 {
     $featureFile = __DIR__ . '/features/' . "{$featureKey}.php";
     // error_log("loading feature file $featureFile");
