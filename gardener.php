@@ -82,7 +82,7 @@ function getFeatures()
     return [
         'remove-emoji' => [],
         'relative-links' => [],
-        'cleanup-uploads-filenames' => [],
+        'cleanup-upload-filenames' => [],
         'cleanup-dashboard' => [],
         'cleanup-frontend' => [],
         'cleanup-menus' => []
