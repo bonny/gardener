@@ -7,6 +7,14 @@ Opinionated.
 
 No feature is added or modified by default. Support for each feature must be added manually.
 
+Gardener:
+
+> one employed to care for the gardens or grounds of a home, business concern, or other property
+> -- https://www.merriam-webster.com/dictionary/gardener
+
+- Cleans up dirty WordPress admin and frontend. It's your WordPress Gardener.
+- The admin/code is cleaner on the other side.
+
 ## Name suggestions
 
 _Gardener_ – because cleans up frontend and backend of WordPress.
@@ -21,6 +29,13 @@ Add support for wanted features in your `functions.php`:
 
     add_theme_support('gardener-remove-emoji');
     add_theme_support('gardener-relative-links');
+    add_theme_support('gardener-cleanup-upload-filenames');
+    add_theme_support('gardener-cleanup-dashboard');
+    add_theme_support('gardener-enhance-login-screen', [
+        'message' => "Welcome to ACME Co website. Please login!",
+        'image' =>
+            '84x84px-login-image.png'
+    ]);
 
 ## TODO
 
@@ -39,18 +54,8 @@ Add support for wanted features in your `functions.php`:
 
 ### Remove emoji
 
-## Taglines
+### Cleanup-upload-filenames
 
-Let's find a tagline!
+### Cleanup dashboard
 
-- Clean up the mess.
-- > a person who tends and cultivates a garden as a pastime or for a living.
-- > someone who takes care of a garden either as a hobby or as a regular job
-- > one who spends time cultivating plants and tending a garden for pleasure or recreation
-  > -- https://www.merriam-webster.com/dictionary/gardener
-- > one employed to care for the gardens or grounds of a home, business concern, or other property
-  > -- https://www.merriam-webster.com/dictionary/gardener
-- Cleanup the mess.
-- Cleans up dirty WordPress admin and frontend. It's your WordPress Gardener.
-- The admin/code is cleaner on the other side.
-- Removes annoyances.
+### Enhance login screen
