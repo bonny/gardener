@@ -88,8 +88,9 @@ function getFeatures()
         'relative-links' => [],
         'cleanup-upload-filenames' => [],
         'cleanup-dashboard' => [],
-        // Supports argument "message".
-        'enhance-login-screen' => []
+        // Supports argument "message" and "image".
+        'enhance-login-screen' => [],
+        'cleanup-frontend' => []
     ];
 }
 

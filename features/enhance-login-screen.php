@@ -40,11 +40,12 @@ if (!empty($featureArguments['message'])) {
  * Add client logo, if login-client-logo.png exists in theme folder.
  * Size should be 84px x 84px (same as default WordPress logo).
  */
-$loginImage = false;
-if (!empty($featureArguments['image'])) {
-    $loginImage = $featureArguments['image'];
-}
-add_action("login_head", function () use ($loginImage) {
+add_action("login_head", function () use ($featureArguments) {
+    $loginImage = false;
+    if (!empty($featureArguments['image'])) {
+        $loginImage = $featureArguments['image'];
+    }
+
     $image_uri = false;
     if ($loginImage) {
         $image_and_path = $loginImage;
