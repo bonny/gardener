@@ -56,11 +56,30 @@ add_action("login_head", function () use ($featureArguments) {
             trailingslashit(get_stylesheet_directory_uri()) . $image_filename;
     }
 
+    // Check for custom size.
+    $imageExtraCss = '';
+    if (
+        isset($featureArguments['image_width']) &&
+        isset($featureArguments['image_height'])
+    ) {
+        $imageExtraCss = sprintf(
+            '
+            background-size: contain;
+            max-width: 100%%;
+            width: %1$spx;
+            height: %2$spx;
+            ',
+            esc_attr($featureArguments['image_width']),
+            esc_attr($featureArguments['image_height'])
+        );
+    }
+
     if ($image_uri) { ?>
 		<style>
 			.login h1 a {
 				background-image: url(<?php echo esc_url($image_uri); ?>);
                 background-position: center;
+                <?php echo $imageExtraCss; ?>
 			}
 		</style>
 		<?php }

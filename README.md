@@ -36,8 +36,9 @@ Add support for wanted features in your `functions.php`:
     add_theme_support('gardener-hide-posts');
     add_theme_support('gardener-enhance-login-screen', [
         'message' => "Welcome to ACME Co website. Please login!",
-        'image' =>
-            '84x84px-login-image.png'
+        'image' => '84x84px-login-image.png',
+        'image_width => 200,
+        'image_height => 75,
     ]);
 
 ## TODO
@@ -84,8 +85,10 @@ Add support for wanted features in your `functions.php`:
 
 - Remove link to wordpress.org.
 - Add support for local client image above login fields.
+- Use image `login-client-logo.png` from theme folder if exists, or any image using `image` argument.
 
 ## Changelog
 
+- 0.2.1 Add support for custom login image size.
 - 0.2 Add support for feature hide posts.
 - 0.1 First version
