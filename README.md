@@ -7,6 +7,8 @@ Opinionated.
 
 No feature is added or modified by default. Support for each feature must be added manually.
 
+Will not break anything if uninstalled.
+
 Gardener:
 
 > one employed to care for the gardens or grounds of a home, business concern, or other property
