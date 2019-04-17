@@ -1,4 +1,4 @@
-# Gardener – Opinionated cleanup for WordPress
+# 🏡🌳🌻 Gardener – Opinionated cleanup for WordPress
 
 **Note: work in progress, don't use on a production site!**
 
@@ -40,7 +40,7 @@ Add support for wanted features in your `functions.php`:
             '84x84px-login-image.png'
     ]);
 
-## Todo
+## TODO
 
 - [ ] Add all wanted features
 - [ ] Document features incl. screenshots
