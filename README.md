@@ -1,4 +1,4 @@
-# 🏡🌳🌻Gardener – Opinionated cleanup for WordPress
+# 🏡🌳🌻 Gardener – Opinionated cleanup for WordPress
 
 **Note: work in progress, don't use on a production site!**
 
