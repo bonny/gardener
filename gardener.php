@@ -90,7 +90,8 @@ function getFeatures()
         'cleanup-dashboard' => [],
         // Supports argument "message" and "image".
         'enhance-login-screen' => [],
-        'cleanup-frontend' => []
+        'cleanup-frontend' => [],
+        'hide-posts' => []
     ];
 }
 
