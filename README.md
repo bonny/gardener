@@ -60,4 +60,6 @@ Add support for wanted features in your `functions.php`:
 
 ### Cleanup dashboard
 
+### Cleanup frontend
+
 ### Enhance login screen
