@@ -89,6 +89,7 @@ Add support for wanted features in your `functions.php`:
 
 ## Changelog
 
+- 0.3 Use `login_headertext` instead of `login_headertitle` because `login_headertitle` is deprecated since WordPress version 5.2.0.
 - 0.2.1 Add support for custom login image size.
 - 0.2 Add support for feature hide posts.
 - 0.1 First version

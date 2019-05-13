@@ -20,7 +20,7 @@ add_action("login_headerurl", function ($url) {
 /**
  * Change title of a element on logo to say that link goes to homepage of current site
  */
-add_action("login_headertitle", function ($title) {
+add_action("login_headertext", function ($title) {
     $title = sprintf(__("Back to %s"), home_url());
     return $title;
 });
