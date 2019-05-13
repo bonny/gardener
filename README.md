@@ -12,9 +12,6 @@ No feature is added or modified by default. Support for each feature must be add
 
 ## Installation and usage
 
-
-
-
 Install using composer:
 
     composer require bonny/gardener
