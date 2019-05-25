@@ -78,9 +78,11 @@ When enabled this feature will
 <details>
   <summary>Screenshot</summary>
 Before cleaning up dashboard
+
 ![cleanup-dashboard-before](screenshots/cleanup-dashboard-before.png)
 After cleaning up dashboard
 ![cleanup-dashboard-after](screenshots/cleanup-dashboard-after.png)
+
 </details>
 
 ### Hide posts
