@@ -75,6 +75,14 @@ When enabled this feature will
 - Removes unwanted dashboard meta boxes, like QuickPress, plugins, recent drafts, incoming links, news and events, WPML meta box if WPML is installed.
 - Removes the text "Thank you for creating with WordPress" at the bottom.
 
+<details>
+  <summary>Screenshot</summary>
+Before cleaning up dashboard
+![cleanup-dashboard-before](screenshots/cleanup-dashboard-before.png)
+After cleaning up dashboard
+![cleanup-dashboard-after](screenshots/cleanup-dashboard-after.png)
+</details>
+
 ### Hide posts
 
     add_theme_support('gardener-hide-posts');
