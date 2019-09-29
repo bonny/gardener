@@ -27,6 +27,7 @@ Add support for wanted features in your `functions.php`:
     add_theme_support('gardener-cleanup-upload-filenames');
     add_theme_support('gardener-cleanup-dashboard');
     add_theme_support('gardener-hide-posts');
+    add_theme_support('gardener-hide-comments');
     add_theme_support('gardener-enhance-login-screen');
 
 ## TODO
@@ -94,6 +95,12 @@ After cleaning up dashboard
     add_theme_support('gardener-hide-posts');
 
 - Hide posts links from admin menu and from admin bar (New -> Post).
+
+### Hide comments
+
+    add_theme_support('gardener-hide-comments');
+
+- Hide comments from admin menu.
 
 ### Enhance login screen
 

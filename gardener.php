@@ -91,7 +91,8 @@ function getFeatures()
         // Supports argument "message" and "image".
         'enhance-login-screen' => [],
         'cleanup-frontend' => [],
-        'hide-posts' => []
+        'hide-posts' => [],
+        'hide-comments' => []
     ];
 }
 
