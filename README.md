@@ -6,6 +6,8 @@ _Gardener_
 
 – https://www.merriam-webster.com/dictionary/gardener
 
+---
+
 **Gardener** is a WordPress plugin that adds theme support for an opinionated cleanup of the WordPress admin and frontend.
 
 No feature is added or modified by default. Support for each feature must be added manually and if this plugin is uninstalled it will not break anything.
