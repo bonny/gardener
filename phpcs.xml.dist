@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ruleset name="Gardener">
+	<description>WordPress Coding Standards for Gardener</description>
+
+	<!-- Show sniff codes in all reports, and progress while running -->
+	<arg value="sp"/>
+	<!-- Check all PHP files in directory tree by default. -->
+	<arg name="extensions" value="php"/>
+	<!-- Run different reports -->
+	<arg name="report" value="full"/>
+	<arg name="report" value="summary"/>
+	<arg name="report" value="source"/>
+
+	<file>.</file>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+
+	<config name="testVersion" value="5.3-"/>
+
+	<rule ref="PSR2">
+	    <exclude name="PSR1.Classes.ClassDeclaration"/>
+		<exclude name="PSR1.Methods.CamelCapsMethodName.NotCamelCaps" />
+		<exclude name="PSR1.Files.SideEffects" />
+	</rule>
+
+	<rule ref="Generic.Files.LineLength">
+		<properties>
+			<property name="lineLimit" value="250" />
+			<property name="absoluteLineLimit" value="300" />
+		</properties>
+	</rule>
+
+</ruleset>
