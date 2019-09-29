@@ -109,6 +109,14 @@ After cleaning up dashboard
   - Uses image `login-client-logo.png` from theme folder if it exists, or any image using the `image` argument.
 - Arguments are optional.
 
+## Other similar plugins
+
+This plugin is not unique. The following plugins are similar popular plugins:
+
+- https://github.com/littlebizzy/speed-demon
+- https://github.com/roots/soil
+- https://github.com/wordplate/plate
+
 ## Changelog
 
 - 0.3 Use `login_headertext` instead of `login_headertitle` because `login_headertitle` is deprecated since WordPress version 5.2.0.
