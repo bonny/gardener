@@ -16,6 +16,8 @@ Install using composer:
 
     composer require bonny/gardener
 
+(Or you can just [download the plugin](https://github.com/bonny/gardener/releases) and place it in your wp plugins folder.)
+
 Add support for wanted features in your `functions.php`:
 
     add_theme_support('gardener-remove-emoji');
