@@ -126,6 +126,7 @@ This plugin is not unique. The following plugins are similar popular plugins:
 
 ## Changelog
 
+- 0.4 Add feature `gardener-hide-comments` that hides the comments menu item.
 - 0.3 Use `login_headertext` instead of `login_headertitle` because `login_headertitle` is deprecated since WordPress version 5.2.0.
 - 0.2.1 Add support for custom login image size.
 - 0.2 Add support for feature hide posts.
