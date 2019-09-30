@@ -66,7 +66,7 @@ Make file names of media attachments work better with more server configs becaus
 
 When enabled this feature will
 
-- Only keep keeping basic printable ASCII characters.
+- Only keep basic printable ASCII characters.
 - Remove international chars like "åäö".
 - Remove strange chars like `å` or `å`(they look very much like the Swedish letter `å`but they are not).
 - Remove percent signs "%".
