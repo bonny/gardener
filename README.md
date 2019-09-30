@@ -62,7 +62,7 @@ Add support for wanted features in your `functions.php`:
 
     add_theme_support('gardener-cleanup-upload-filenames');
 
-Make file names of media attachments work better with more server configs because for example MacOS does not treat UPPERCASE or lowercase chars different, but a Linux servers will. So if you transfer uploads to a server suddenly they stop working and give you 404 errors.
+Make file names of media attachments work better with more server configs because for example MacOS does not treat UPPERCASE or lowercase chars different, but a Linux server will. So if you transfer uploads to a server suddenly they stop working and give you 404 errors.
 
 When enabled this feature will
 
