@@ -1,10 +1,7 @@
 <h1 align=center>
     🏡 🌳 🌻 Gardener  🌻 🌳 🏡
-</h1>
-
-<h2 align=center>
     – Opinionated cleanup for WordPress
-</h2>
+</h1>
 
 _Gardener_
 > one employed to care for the gardens or grounds of a home, business concern, or other property
