@@ -1,5 +1,6 @@
 <h1 align=center>
     🏡 🌳 🌻 Gardener  🌻 🌳 🏡
+    <br >
     – Opinionated cleanup for WordPress
 </h1>
 
