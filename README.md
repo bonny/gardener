@@ -1,10 +1,16 @@
-# 🏡🌳🌻 Gardener – Opinionated cleanup for WordPress
+<h1 align=center>
+    🏡🌳🌻 Gardener
+    <br />
+    – Opinionated cleanup for WordPress
+</h1>
 
-_Gardener_
-
-> one employed to care for the gardens or grounds of a home, business concern, or other property
-
-– https://www.merriam-webster.com/dictionary/gardener
+<blockquote align=center>
+    <p align=center>
+        <em>Gardener</em>
+        one employed to care for the gardens or grounds of a home, business concern, or other property</blockquote>
+        <cite>– https://www.merriam-webster.com/dictionary/gardener</cite>
+   </p>
+ </blockquote>
 
 ---
 
